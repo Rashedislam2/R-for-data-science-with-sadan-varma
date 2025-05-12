@@ -80,4 +80,4 @@ names[1:3]
 my_value = c(4,7,9,11,20)
 names(my_value)=c ("a","b","c","d","e")
 my_value
-b
+my_value["c"]
