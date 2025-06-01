@@ -34,3 +34,11 @@ hist(dep_delay)
 head(nycflights13::flights)
 carrier
 summary(carrier)
+carrierfact=factor(carrier)
+summary(carrierfact)
+describe.by(distance,group = carrier)
+
+#two level aggregation
+
+aggregate(distance,by=list(carrier,month),FUN=mean,na.rm=TRUE)  
+aggregate(distance,by=list(carrier,month),FUN=sd,na.rm=TRUE)
