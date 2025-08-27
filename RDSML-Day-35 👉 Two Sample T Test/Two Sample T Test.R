@@ -10,4 +10,4 @@ shapiro.test(dataset$Female)
 var.test(x=dataset$Male,y=dataset$Female)
 
 #running the independent sample t test
-t.test(x=dataset$Male,Y=dataset$Female,var.equal = TRUE)
+t.test(x=dataset$Male,y=dataset$Female,var.equal = TRUE)
